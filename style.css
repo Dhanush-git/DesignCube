@@ -1,0 +1,141 @@
+
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #FFE5DB;
+}
+
+.brand{
+    height: 30px;
+    margin-left: 10px;
+    position: fixed;
+}
+
+.header-bar{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+    z-index: 1;
+}
+
+.nav-item{
+    width: 100px;
+    text-align: center;
+    font-weight: 700;
+    color: #3c2c9c;
+}
+
+.banner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner>p{
+    font-size: 150px;
+    color: #3c2c9c;
+    font-weight: 700;
+}
+
+
+
+
+.deals-title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #3c2c9c;
+}
+
+.deals-sub{
+    text-align: center;
+    padding: 0px 10px;
+
+}
+
+.price-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.price-card{
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 12px 0px #dfa58e;
+    padding:0px 20px;
+}
+
+.price-card:hover{
+    background-color: #3c2c9c;
+    color: white;
+}
+
+
+
+.pack-name{
+    font-weight: 700;
+}
+
+.pack-price{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: baseline;
+}
+
+.pack-price>h1,h2{
+    margin: 0px;
+}
+
+.pack-details{
+    padding: 20px;
+    list-style: kannada;
+}
+
+.pack-details-individual{
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+.me-image{
+    height: 200px;
+    border-radius: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px){
+    .brand{
+        margin: 0px;
+        position: relative;
+    }
+    
+    .header-bar{
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .price-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
