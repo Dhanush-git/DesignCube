@@ -1,11 +1,14 @@
-
-
 html,body{
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     background-color: #FFE5DB;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
 }
 
 .brand{
@@ -44,31 +47,37 @@ html,body{
     justify-content: center;
 }
 
-.banner>p{
-    font-size: 150px;
+.banner>h1{
+    font-size: 12vw;
     color: #3c2c9c;
     font-weight: 700;
+    text-align: center;
+}
+
+#deals{
+    padding-top: 50px;
 }
 
 
-
-
 .deals-title{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     text-align: center;
     color: #3c2c9c;
+    margin-bottom: 0px;
 }
 
 .deals-sub{
     text-align: center;
-    padding: 0px 10px;
+    padding: 30px 0px;
+    font-size: 20px;
 
 }
 
 .price-wrapper{
     display: flex;
     justify-content: center;
+
 }
 
 .price-card{
@@ -120,6 +129,75 @@ html,body{
     display: block;
 }
 
+#about{
+    max-height: 100vh;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFE5DB;
+    color: #3c2c9c;
+}
+
+#about>h1{
+
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-me{
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 25px;
+    max-width: 980px;
+    margin: 0px auto;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 100px;
+    padding-bottom: 100px;
+}
+
+.contact li{
+    width: 60px;
+    font-size: 20px;
+    color: #3c2c9c;
+}
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#work>h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: #3c2c9c;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.work-card{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.work-card>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
 
 @media only screen and (max-width: 600px){
     .brand{
@@ -138,4 +216,11 @@ html,body{
         align-items: center;
     }
 
+    .banner>h1{
+        font-size: 26vw;
+    }
+
+    #work{
+        flex-direction: column;
+    }
 }

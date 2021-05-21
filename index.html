@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <title>Design cube</title>
 </head>
@@ -14,16 +15,33 @@
     <div class="header-bar">
         <img src="./img/logo.png" alt="brand" class="brand">
         <ul class="nav-bar">
-            <li class="nav-item">Works</li>
+           <a href="#work"><li class="nav-item">Works</li></a>
             <a href="#deals"><li class="nav-item">Deals</li></a>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Contact</li>
+            <a href="#about"><li class="nav-item">About</li></a>
         </ul>
     </div>
 
 
     <div class="banner">
-        <p>Let's talk design</p>
+        <h1>Let's talk design</h1>
+
+    </div>
+
+    <div id="work">
+        <h1>Work</h1>
+        <div class="work">
+            <div class="work-card" style="background-color: #eeeeee;">
+                <img src="./img/w1.png">
+            </div>
+    
+            <div class="work-card">
+                <img src="./img/w2.jpg">
+            </div>
+    
+            <div class="work-card">
+                <img src="./img/w3.jpg">
+            </div>
+        </div>
     </div>
 
 
@@ -91,7 +109,21 @@
 
 
     <div id="about">
+        <h1>About</h1>
         <img src="./img/me2.jpg" alt="me" class="me-image">
+        <p class="about-me">
+            👋Hey Stranger, 😀 my name is 🌊 Dhanush Suvarna I am a B.Tech 💻 Computer Science student 
+            and also a freelance designer I design and develop websites static and dynamic ones, 
+            I also do social media graphics and package designs.
+        </p>
+    </div>
+
+    <div id="contact">
+        <ul class="contact">
+            <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+            <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            <a href="#"><li><i class="fas fa-envelope-open"></i></li></a>
+        </ul>
     </div>
     
 </body>
